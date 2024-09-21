@@ -4,7 +4,11 @@ public abstract class Animal {
 	private	String name;
 
 	//methods getters and setters
+	public Animal() {}
 	
+	public Animal(String name) {
+		this.name = name;
+	}
 	public void eat(double quantity) {
 		System.out.println("dont bother me, i am eating "  +quantity +"lbs of food");
 	}
