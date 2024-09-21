@@ -9,6 +9,7 @@ public class AnimalSpaApp {
 	}
 	
 	public void run() {
+		AnimalRetreat retreat = new AnimalRetreat("Bob the Attendant");
 		Dog Dog = new Dog("Charlie"); 
 		System.out.println(Dog.getName());
 	}
