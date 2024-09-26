@@ -2,7 +2,7 @@ package com.skilldistillery.spa.entity;
 
 public class Dog extends Animal{
 	private String noise = "Bark!";
-	
+	private double dogFood = 1; 
 	public Dog() {}
 
 	public Dog(String name) {
@@ -17,5 +17,9 @@ public class Dog extends Animal{
 	public void makeNoise() {
 		super.makeNoise();
 		System.out.println("The noise i make is " +noise);
+	}
+	public void eat() {
+		super.eat(dogFood);
+		System.out.println("dont bother me, i am eating "  +dogFood +"lbs of dog food");
 	}
 }
