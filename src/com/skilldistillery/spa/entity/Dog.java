@@ -13,12 +13,13 @@ public class Dog extends Animal{
 		this.noise = this.noise +" " +noise;
 	}
 
-
+	@Override
 	public void makeNoise() {
 		super.makeNoise();
 		System.out.println("The noise i make is " +noise);
 	}
-	public void eat() {
+	@Override
+	public void eat(double quantity) {
 		super.eat(dogFood);
 		System.out.println("dont bother me, i am eating "  +dogFood +"lbs of dog food");
 	}

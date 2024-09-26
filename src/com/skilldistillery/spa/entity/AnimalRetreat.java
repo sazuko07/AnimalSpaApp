@@ -4,6 +4,7 @@ public class AnimalRetreat {
 	private String dogRoom;
 	private String elephantRoom;	
 	private String openRoom; 
+	 
 
 	private Attendant attendant; 
 	
@@ -11,11 +12,12 @@ public class AnimalRetreat {
 		attendant = new Attendant(attendantName, true);
 		System.out.println("We just hired our attendant, " +attendantName);
 	}
-	String animalRooms[] = new String[10]; {
+	public String animalRooms[] = new String[10];  {
 		animalRooms[0] = dogRoom;
 		animalRooms[1] = catRoom;
-		animalRooms[2] = elephantRoom; 
+		animalRooms[2] = elephantRoom;
 	}
+
 	public void checkForOpenRooms() {
 		int checkForOpenRooms = 0;
 		for (int i = 0; i < animalRooms.length; i++ ) {
