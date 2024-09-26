@@ -1,21 +1,17 @@
 package com.skilldistillery.spa.entity;
 public class AnimalRetreat {
-	private String catRoom;
-	private String dogRoom;
-	private String elephantRoom;	
-	private String openRoom; 
-	 
 
+	
 	private Attendant attendant; 
 	
 	public AnimalRetreat(String attendantName, boolean isHired) {
 		attendant = new Attendant(attendantName, true);
 		System.out.println("We just hired our attendant, " +attendantName);
 	}
-	public String animalRooms[] = new String[10];  {
-		animalRooms[0] = dogRoom;
-		animalRooms[1] = catRoom;
-		animalRooms[2] = elephantRoom;
+	public Animal animalRooms[] = new Animal[10];  {
+		animalRooms[0] = new Cat("Mittens the Cat");
+		animalRooms[1] = new Dog("Charlie the Dog");
+		animalRooms[2] = new Elephant("Dumbo the Elephant");
 	}
 
 	public void checkForOpenRooms() {
