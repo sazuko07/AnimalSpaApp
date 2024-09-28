@@ -1,7 +1,10 @@
 package com.skilldistillery.spa.entity;
 public class AnimalRetreat {
-
+	public Dog Dog = new Dog("Charlie the Dog"); 
+	public Cat Cat = new Cat("Mittens the Cat");
+	public Elephant Elephant = new Elephant("Dumbo the Elephant");
 	private Attendant attendant;
+	 
 	private String name;  
 	public String getName() {
 		return name;
@@ -9,16 +12,51 @@ public class AnimalRetreat {
 
 	public AnimalRetreat(String attendantName) {
 		attendant = new Attendant(attendantName);
+		System.out.println("Welcome to the CatDogElephant animal retreat!");
 		System.out.println("We just hired our attendant, " +attendantName);
 		System.out.println("Now, we can officially open our CatDogElephant spa and retreat!");
 		System.out.println("Welcome to the retreat! a place where cats, dogs, and elephants ");
 		System.out.println("are pampered every day and night, each room specially tailored to ");
 		System.out.println("each animal's individual needs!");
 	}
+//	public Animal[] getAnimalRooms() {
+//		return animalRooms;
+//	}
+//
+//	public void setAnimalRooms(Animal[] animalRooms) {
+//		this.animalRooms = animalRooms;
+//	}
+
+	
 	public Animal animalRooms[] = new Animal[10];  {
-		animalRooms[0] = new Cat("Mittens the Cat");
-		animalRooms[1] = new Dog("Charlie the Dog");
-		animalRooms[2] = new Elephant("Dumbo the Elephant");
+		animalRooms[0] = Cat;
+		animalRooms[1] = Dog;
+		animalRooms[2] = Elephant;
+	}
+	public void listGuestAnimals() {
+		System.out.println(animalRooms);
+		for (int i = 0; i < animalRooms.length; i++) {
+			if(animalRooms[i] == null);
+				String guestAnimals = String.valueOf(animalRooms);
+				System.out.println(guestAnimals);
+		}
+	}
+	
+
+
+	public AnimalRetreat(Animal[] animalRooms) {
+		super();
+		this.animalRooms = animalRooms;
+	}
+
+	
+
+	public Animal[] getAnimalRooms() {
+		return animalRooms;
+	}
+
+	public void setAnimalRooms(Animal[] animalRooms) {
+		this.animalRooms = animalRooms;
 	}
 
 	public void checkRooms() {
@@ -36,6 +74,9 @@ public class AnimalRetreat {
 			}
 	}
 		
+
+	
+
 		public void addAnimalCat() {
 			
 			for (int i = 0; i < animalRooms.length; i++) {

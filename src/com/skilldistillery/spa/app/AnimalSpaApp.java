@@ -1,10 +1,12 @@
 package com.skilldistillery.spa.app;
 import com.skilldistillery.spa.entity.*;
+import com.skilldistillery.spa.entity.AnimalRetreat;
 import java.util.Scanner; 
 public class AnimalSpaApp {
 
 	public static void main(String[] args) {
-		AnimalRetreat animalRooms() = new AnimalRetreat(); 	 
+		AnimalRetreat AnimalRetreat = new AnimalRetreat(); 
+		 	 
 		AnimalSpaApp app = new AnimalSpaApp();
 		app.run();
 
@@ -33,7 +35,8 @@ public class AnimalSpaApp {
 		
 	
 	if(userChoice == 1) {
-		System.out.println(animalRetreat());
+		 
+		AnimalRetreat.listGuestAnimals();
 }
 	}
 }
