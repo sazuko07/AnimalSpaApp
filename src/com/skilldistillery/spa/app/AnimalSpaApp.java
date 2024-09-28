@@ -1,8 +1,8 @@
 package com.skilldistillery.spa.app;
 import com.skilldistillery.spa.entity.*;
-import com.skilldistillery.spa.entity.AnimalRetreat;
+
 import java.util.Scanner; 
-public class AnimalSpaApp {
+public class AnimalSpaApp<animalRooms> {
 
 	public static void main(String[] args) {
 	 	 
@@ -16,7 +16,8 @@ public class AnimalSpaApp {
 	
 	public void AnimalSpaApp() {
 		
-		AnimalRetreat retreat = new AnimalRetreat("Bob the Attendant");
+		AnimalRetreat retreat = new AnimalRetreat("Bob the attendant", "CatDogElephant", 10, [3]);
+		AnimalRetreat printArray = new AnimalRetreat();
 		Scanner scanner = new Scanner(System.in);
 		int userChoice = 0;
 		System.out.println("We currently have 3 guests: ");
@@ -36,7 +37,8 @@ public class AnimalSpaApp {
 		
 	
 	if(userChoice == 1) {
-		AnimalRetreat.listGuestAnimals();   
+		AnimalRetreat.printAnimalRoomArray();
+//		
 		
 }
 	}
