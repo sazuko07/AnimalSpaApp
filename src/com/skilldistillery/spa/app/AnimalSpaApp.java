@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class AnimalSpaApp {
 
 	public static void main(String[] args) {
-		AnimalRetreat AnimalRetreat = new AnimalRetreat(); 
+	 	 
 		 	 
 		AnimalSpaApp app = new AnimalSpaApp();
-		app.run();
+		app.AnimalSpaApp();
 
 	}
 
 
 	
-	public void run() {
+	public void AnimalSpaApp() {
 		
 		AnimalRetreat retreat = new AnimalRetreat("Bob the Attendant");
 		Scanner scanner = new Scanner(System.in);
@@ -30,13 +30,14 @@ public class AnimalSpaApp {
 		System.out.println("Please choose from one of the following options: ");
 		System.out.println("1. List the current occupants of the retreat");
 		System.out.println("2. Check a new animal to the retreat");
+		System.out.println("3. Tell attendant to start the rounds");
 		System.out.println("4. Close the retreat for the night");
 		userChoice = scanner.nextInt();
 		
 	
 	if(userChoice == 1) {
-		 
-		AnimalRetreat.listGuestAnimals();
+		AnimalRetreat.listGuestAnimals();   
+		
 }
 	}
 }

@@ -18,11 +18,8 @@ public abstract class Animal {
 	public Animal(String name) {
 		this.name = name;
 	}
-	@Override
-	public String toString() {
-		return "Animal [name=" + name + ", getName()=" + getName() + ", getClass()=" + getClass() + ", hashCode()="
-				+ hashCode() + ", toString()=" + super.toString() + "]";
-	}
+	
+	
 
 	public void eat(double quantity) {
 		System.out.println("dont bother me, i am eating "  +quantity +"lbs of food");

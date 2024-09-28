@@ -1,4 +1,7 @@
 package com.skilldistillery.spa.entity;
+
+import java.util.Arrays;
+
 public class AnimalRetreat {
 	public Dog Dog = new Dog("Charlie the Dog"); 
 	public Cat Cat = new Cat("Mittens the Cat");
@@ -34,15 +37,15 @@ public class AnimalRetreat {
 		animalRooms[2] = Elephant;
 	}
 	public void listGuestAnimals() {
-		System.out.println(animalRooms);
 		for (int i = 0; i < animalRooms.length; i++) {
-			if(animalRooms[i] == null);
-				String guestAnimals = String.valueOf(animalRooms);
-				System.out.println(guestAnimals);
+			String guestAnimals = Arrays.toString(animalRooms);
+			System.out.println(guestAnimals);
+			
+				}
 		}
-	}
 	
-
+	
+	
 
 	public AnimalRetreat(Animal[] animalRooms) {
 		super();
