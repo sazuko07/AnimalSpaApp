@@ -2,6 +2,15 @@ package com.skilldistillery.spa.entity;
 
 public abstract class Animal {
 	private	String name;
+	private String getName; 
+
+	public String getGetName() {
+		return getName;
+	}
+
+	public void setGetName(String getName) {
+		this.getName = getName;
+	}
 
 	//methods getters and setters
 	public Animal() {}
@@ -9,6 +18,12 @@ public abstract class Animal {
 	public Animal(String name) {
 		this.name = name;
 	}
+	@Override
+	public String toString() {
+		return "Animal [name=" + name + ", getName()=" + getName() + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + ", toString()=" + super.toString() + "]";
+	}
+
 	public void eat(double quantity) {
 		System.out.println("dont bother me, i am eating "  +quantity +"lbs of food");
 	}
@@ -22,6 +37,7 @@ public abstract class Animal {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
+
 }
  
