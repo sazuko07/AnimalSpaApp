@@ -11,8 +11,8 @@ public abstract class Animal {
 		return getName;
 	}
 
-	public void setGetName(String getName) {
-		this.getName = getName;
+	public void setGetName(String setName) {
+		this.getName = setName;
 	}
 
 	//methods getters and setters

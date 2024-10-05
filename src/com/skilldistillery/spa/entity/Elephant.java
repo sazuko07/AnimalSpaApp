@@ -3,6 +3,8 @@ package com.skilldistillery.spa.entity;
 import java.util.Objects;
 
 public class Elephant extends Animal {
+
+
 	private String noise = "Toooot!";
 	private double elephantFood = 25; 
 	public Elephant () {}

@@ -3,6 +3,8 @@ package com.skilldistillery.spa.entity;
 import java.util.Objects;
 
 public class Cat extends Animal {
+
+
 	private String noise = "Meow!";
 	private double catFood = .25; 
 	public Cat () {}

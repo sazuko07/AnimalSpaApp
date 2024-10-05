@@ -3,9 +3,16 @@ package com.skilldistillery.spa.entity;
 import java.util.Objects;
 
 public class Dog extends Animal{
+	
 	private String noise = "Bark!";
 	private double dogFood = 1; 
 	public Dog() {}
+
+
+
+	
+
+
 
 	public Dog(String name) {
 		super(name);
