@@ -16,8 +16,7 @@ public class AnimalSpaApp<animalRooms> {
 	
 	public void AnimalSpaApp() {
 		
-		AnimalRetreat retreat = new AnimalRetreat("Bob the attendant", "CatDogElephant", 10, [3]);
-		AnimalRetreat printArray = new AnimalRetreat();
+		AnimalRetreat retreat = new AnimalRetreat("Bob the attendant", "CatDogElephant", 10);
 		Scanner scanner = new Scanner(System.in);
 		int userChoice = 0;
 		System.out.println("We currently have 3 guests: ");
@@ -37,7 +36,8 @@ public class AnimalSpaApp<animalRooms> {
 		
 	
 	if(userChoice == 1) {
-		AnimalRetreat.printAnimalRoomArray();
+		
+		 retreat.printAnimalRooms(currentGuests);
 //		
 		
 }

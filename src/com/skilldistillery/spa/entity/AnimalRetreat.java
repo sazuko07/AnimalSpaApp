@@ -10,13 +10,14 @@ public class AnimalRetreat {
 	private Attendant attendant;
 	private int numOfRooms;
 	private String nameOfRetreat;
+	 
 	
 	
-	public AnimalRetreat(String attendantName,  String nameOfRetreat, int numOfRooms, Animal[] currentGuests) {
+	public AnimalRetreat(String attendantName,  String nameOfRetreat, int numOfRooms) {
 		super();
 		this.numOfRooms = numOfRooms;
 		this.nameOfRetreat = nameOfRetreat;
-		this.currentGuests = currentGuests;
+		this.numOfRooms = numOfRooms;
 		System.out.println("Welcome to the CatDogElephant animal retreat!");
 		System.out.println("We just hired our attendant, " +attendantName);
 		System.out.println("Now, we can officially open our CatDogElephant spa and retreat!");
@@ -54,16 +55,16 @@ public class AnimalRetreat {
 //		this.animalRooms = animalRooms;
 //	}
 
-	public void printAnimalRoomArray() {
-		int index = currentGuests.length;
-		System.out.println(currentGuests[index]);
-	}
+	
 	 Animal currentGuests[] = new Animal[10];  {
-		 currentGuests[0] = Cat;
-		 currentGuests[1] = Dog;
-		 currentGuests[2] = Elephant;
+		 currentGuests[0] = new Cat("Mittens", "Meow!");
+		 currentGuests[1] = new Dog("Charlie", "Bark!");
+		 currentGuests[2] = new Elephant("Dumbo", "Toooot!");
 	}
-
+	 public void printAnimalRooms(Animal[] currentGuests) {
+			int index = currentGuests.length;
+			System.out.println(currentGuests[index]);
+		}
 
 
 		
@@ -136,5 +137,7 @@ public class AnimalRetreat {
 			attendant.makeRounds(currentGuests);
 			System.out.println("Our attendant has started making the rounds");
 		}
+
+		
 }
 
