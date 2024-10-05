@@ -61,10 +61,13 @@ public class AnimalRetreat {
 		 currentGuests[1] = new Dog("Charlie", "Bark!");
 		 currentGuests[2] = new Elephant("Dumbo", "Toooot!");
 	}
-	 public void printAnimalRooms(Animal[] currentGuests) {
-			int index = currentGuests.length;
-			System.out.println(currentGuests[index]);
-		}
+//	 public void printAnimalRooms() {
+//			for (int i = 0; i < currentGuests.length; i++)
+//				System.out.println(currentGuests[i]);
+//				if(currentGuests[i].equals(null)) {
+//					
+//				}
+//		}
 
 
 		
@@ -88,16 +91,15 @@ public class AnimalRetreat {
 	}
 
 	public void checkRooms() {
-		int checkRooms = 0;
+		int checkRooms;
 		for (int i = 0; i < currentGuests.length; i++ ) {
 			if(currentGuests[i] == null) {
 				checkRooms = i; 
-				System.out.println("This room is currently empty");
-				System.out.println("There are currently " +checkRooms +"open rooms"); 
+				System.out.println("There are currently " +checkRooms +" open rooms"); 
 				break; 
 			}	
 				else {
-					System.out.println("Current Occupancy: " +currentGuests);
+					System.out.println("Room occupied by: " +currentGuests[i]);
 				}
 			}
 	}

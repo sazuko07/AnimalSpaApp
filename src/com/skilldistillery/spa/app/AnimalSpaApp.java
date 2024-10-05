@@ -37,7 +37,7 @@ public class AnimalSpaApp<animalRooms> {
 	
 	if(userChoice == 1) {
 		
-		 retreat.printAnimalRooms(currentGuests);
+		 retreat.checkRooms();
 //		
 		
 }
